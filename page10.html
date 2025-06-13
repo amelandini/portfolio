@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Website | Amelia</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+      :root {
+        --primary-color: #785ab1;
+        --secondary-color: #b1679d;
+        --extra-light: #f3f4f6;
+        --white: #ffffff;
+        --gradient-1: linear-gradient(to bottom right, #0163a5, #d887d7);
+        --gradient-2: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+        --max-width: 1400px;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        scroll-behavior: smooth;
+        font-family: "Montserrat", sans-serif;
+        color: var(--white);
+        background-image: var(--gradient-1);
+        text-align: center;
+      }
+
+      /* Navbar tetap di atas */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        z-index: 100;
+      }
+
+      .nav__logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--white);
+        background-image: var(--gradient-2);
+        border-radius: 100%;
+        padding: 9px 12px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        margin-right: 10px;
+      }
+
+      .nav__text {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      .contact__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .logo {
+        font-size: 2rem;
+        font-weight: 700;
+        background-image: var(--gradient-2);
+        color: var(--white);
+        padding: 12px 18px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .section__header {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 1rem;
+      }
+
+      .thank_you {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 2rem;
+      }
+
+      .section__description {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+
+      .contact__socials {
+        margin-top: 2rem;
+      }
+
+      .contact__socials a {
+        font-size: 3rem;
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      footer {
+        margin-top: 3rem;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      /* Styling tombol Back dan Go to Home */
+      .button {
+        position: fixed;
+        bottom: 2rem;
+        padding: 12px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #0163a5;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .button:hover {
+        background-color: #1b2845;
+      }
+
+      .button1 {
+        left: 2rem;
+      }
+
+      .button2 {
+        right: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <span class="nav__logo">A</span>
+      <a href="#" class="nav__text">Ameliaandini</a>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact__container">
+      <div class="logo">A</div>
+      <h1 class="thank_you">Thank You!</h1>
+      <h2 class="section__header">Let's Talk With Me!</h2>
+      <p class="section__description">Don't forget to follow my social media!</p>
+      <div class="contact__socials">
+        <a href="https://www.instagram.com/ameeliandinii/?utm_source=ig_web_button_share_sheet">
+          <i class="ri-instagram-fill"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      Copyright © 2024 Amelia July Andini. All rights reserved.
+    </footer>
+
+    <!-- Tombol Back dan Go to Home -->
+    <a href="page9.html" class="button button1">Back</a>
+    <a href="page1.html" class="button button2">Go to Home</a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

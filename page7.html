@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Music Playlist | Amelia</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+      :root {
+        --primary-color: #785ab1;
+        --secondary-color: #b1679d;
+        --extra-light: #f3f4f6;
+        --white: #ffffff;
+        --gradient-1: linear-gradient(to bottom right, #0163a5, #d887d7);
+        --gradient-2: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+        --max-width: 1400px;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        scroll-behavior: smooth;
+        font-family: "Montserrat", sans-serif;
+        color: var(--white);
+        background-image: var(--gradient-1);
+        text-align: center;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        z-index: 100;
+      }
+
+      .nav__logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--white);
+        background-image: var(--gradient-2);
+        border-radius: 100%;
+        padding: 9px 12px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        margin-right: 10px;
+      }
+
+      .nav__text {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      .music-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 6rem 2rem;
+      }
+
+      .music-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 0rem;
+      }
+
+      .music-list {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .music-box {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 250px;
+      }
+
+      .music-box img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+      }
+
+      .music-box h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .music-box p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      audio {
+        width: 100%;
+        outline: none;
+      }
+
+      .button {
+        position: fixed;
+        bottom: 2rem;
+        padding: 12px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #0163a5;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .button:hover {
+        background-color: #1b2845;
+      }
+
+      .button1 {
+        left: 2rem;
+      }
+
+      .button2 {
+        right: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <span class="nav__logo">A</span>
+      <a href="#" class="nav__text">Ameliaandini</a>
+    </nav>
+
+    <section class="music-container">
+      <h2 class="music-title">Favorite Song</h2>
+      <div class="music-list">
+        <div class="music-box">
+          <img src="taylor.jpg" alt="Album 1" />
+          <h3>Never Grow Up</h3>
+          <p>Taylor Swift</p>
+          <audio controls>
+            <source src="nevergrowup.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="music-box">
+          <img src="interaksi.jpg" alt="Album 2" />
+          <h3>Interaksi</h3>
+          <p>Tulus</p>
+          <audio controls>
+            <source src="interaksi.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="music-box">
+          <img src="niki.jpg" alt="Album 3" />
+          <h3>Lowkey</h3>
+          <p>Niki</p>
+          <audio controls>
+            <source src="lowkey.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="music-box">
+          <img src="tulus17.webp" alt="Album 4" />
+          <h3>Tujuh Belas</h3>
+          <p>Tulus</p>
+          <audio controls>
+            <source src="tujuh belas.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <a href="page6.html" class="button button1">Back</a>
+    <a href="page8.html" class="button button2">Next!</a>
+  </body>
+</html>

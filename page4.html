@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Website | Amelia</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+      :root {
+        --primary-color: #785ab1;
+        --secondary-color: #b1679d;
+        --extra-light: #f3f4f6;
+        --white: #ffffff;
+        --gradient-1: linear-gradient(to bottom right, #0163a5, #d887d7);
+        --gradient-2: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+        --max-width: 1400px;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        scroll-behavior: smooth;
+        font-family: "Montserrat", sans-serif;
+        color: var(--white);
+        background-image: var(--gradient-1);
+      }
+
+      /* Navbar tetap di atas */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3); /* Transparan gelap */
+        backdrop-filter: blur(10px); /* Efek blur */
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        z-index: 100;
+      }
+
+      .nav__logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--white);
+        background-image: var(--gradient-2);
+        border-radius: 100%;
+        padding: 9px 12px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        margin-right: 10px;
+      }
+
+      .nav__text {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--white);
+        background-image: var(--gradient-2);
+        border: none;
+        border-radius: 5rem;
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Mengubah layout gambar dan teks */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8rem 2rem;
+        max-width: var(--max-width);
+        margin: auto;
+        flex-direction: row-reverse; /* Gambar di kiri, teks di kanan */
+      }
+
+      .header__content {
+        max-width: 700px;
+      }
+
+      .header__content h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      .header__content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .header__content p {
+        color: var(--extra-light);
+        line-height: 1.75rem;
+        margin-bottom: 2rem;
+      }
+
+      .header__image {
+        max-width: 400px;
+      }
+
+      .header__image img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+      }
+
+      /* Styling tombol Back dan Next */
+      .button {
+        position: fixed;
+        bottom: 2rem;
+        padding: 12px 24px;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #0163a5;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .button:hover {
+        background-color: #1b2845;
+      }
+
+      .button1 {
+        left: 2rem;
+      }
+
+      .button2 {
+        right: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <span class="nav__logo">A</span>
+      <a href="#" class="nav__text">Ameliaandini</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="header__content">
+        <h1>Amelia July Andini</h1>
+        <h2>Hello there! I'm a Student</h2>
+        <p>
+          I'm a teenager captivated by the world of coding. Every line of code 
+          is an expression of myself, and I love crafting interactive designs 
+          that captivate and provide unforgettable user experiences.
+        </p>
+        <a href="mailto:ameliajlyandini@gmail.com">
+          <button class="btn">Hire Me Now</button>
+        </a>
+      </div>
+      <div class="header__image">
+        <img src="amel.jpg" alt="Amelia" />
+      </div>
+    </header>
+
+    <!-- Tombol Back dan Next -->
+    <a href="page3.html" class="button button1">Back</a>
+    <a href="page5.html" class="button button2">Next!</a>
+  </body>
+</html>
